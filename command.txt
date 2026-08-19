@@ -1,1 +1,19 @@
 This is the Django class
+
+// to create the venv
+python -m venv myenv
+
+// to activate the venv
+myenv\scripts\activate
+
+// to install the Djangoj
+pip install django
+
+// to check that Django is install or not
+django-admin --version
+
+// to create the project
+django-admin startproject myproject
+
+// to start the app
+python manage.py startapp myapp
