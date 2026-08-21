@@ -17,3 +17,6 @@ django-admin startproject myproject
 
 // to start the app
 python manage.py startapp myapp
+
+// run server
+python manage.py runserver

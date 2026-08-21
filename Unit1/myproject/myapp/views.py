@@ -24,4 +24,8 @@ def result(req):
         return HttpResponse("Excellent")
     else:
         return HttpResponse("very Excellent")
-    
+
+
+# dynamic url
+def dynamic_url(req, name):
+    return HttpResponse(f"Hello {name} welcome to my website")
