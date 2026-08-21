@@ -59,4 +59,14 @@ def movies(req  ,mov):
     else:
         result = "not found";
     return HttpResponse(f"this is your movie {result}😁😁");
-    
+
+# query parameter
+def recip(req):
+    food = req.GET.get("food");
+    return HttpResponse(f"recipe available for food {food}");
+
+def add(req):
+    val1 = req.GET.get('val1');
+    val2 = req.GET.get('val2');
+    result = int(val1) + int(val2);
+    return HttpResponse(f"you ans is {result}")

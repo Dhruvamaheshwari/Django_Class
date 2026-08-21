@@ -8,4 +8,6 @@ urlpatterns = [
     path('dynamic/<str:name>/', views.dynamic_url),
     path('menuitem/<str:dis>/' , views.menuitem),
     path('movies/<str:mov>/' , views.movies),
+    path('recip/' , views.recip),
+    path('add/' , views.add),
 ]
