@@ -5,5 +5,7 @@ urlpatterns = [
     path('home/' , views.home),
     path('about/' , views.about),
     path('result/' , views.result),
-    path('dynamic/<str:name>/', views.dynamic_url)
+    path('dynamic/<str:name>/', views.dynamic_url),
+    path('menuitem/<str:dis>/' , views.menuitem),
+    path('movies/<str:mov>/' , views.movies),
 ]

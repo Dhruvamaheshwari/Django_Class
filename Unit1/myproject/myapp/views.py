@@ -29,3 +29,34 @@ def result(req):
 # dynamic url
 def dynamic_url(req, name):
     return HttpResponse(f"Hello {name} welcome to my website")
+
+
+def menuitem(req , dis):
+    items = {
+        'suger' : "cost is 75",
+        "mango" : "cost is 60",
+        "chocolate" : "cost is 100"
+    }
+
+    if dis in items:
+        result = items[dis];
+    else:
+        result = "item is not found"
+    
+    return HttpResponse(f"this is your item {result}");
+
+
+# movies finder
+def movies(req  ,mov):
+    items = {
+        "Robot" : "ticket movie is 200",
+        "movie2" : "ticket movie is 500",
+        "movie2" : "ticket movie is 700",
+    }
+
+    if(mov in items):
+        result = items[mov];
+    else:
+        result = "not found";
+    return HttpResponse(f"this is your movie {result}😁😁");
+    
